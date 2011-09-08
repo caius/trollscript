@@ -78,7 +78,3 @@ class TrollScript
     end
   end
 end
-
-app = TrollScript.new
-app.compile(ARGF.read)
-app.run
