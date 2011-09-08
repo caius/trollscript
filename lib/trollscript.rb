@@ -8,8 +8,7 @@ class TrollScript
   end
 
   def compile c
-    c = c.gsub(/\s/, "")
-    c.split("").each_slice(3) do |o|
+    c.gsub(/\s/, "").split("").each_slice(3) do |o|
       o = o.join.downcase
       if @ops.has_key? o
         @code << o
