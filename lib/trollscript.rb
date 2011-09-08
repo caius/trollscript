@@ -39,16 +39,16 @@ class TrollScript
 
   def create_ops
     {
-      "tro" => Proc.new {},
-      "ooo" => Proc.new { @tp = (@tp == @tape.size - 1 ? 0 : @tp + 1) },
-      "ool" => Proc.new { @tp = (@tp == 0 ? @tape.size - 1 : @tp - 1) },
-      "olo" => Proc.new { @tape[@tp] += 1 },
-      "oll" => Proc.new { @tape[@tp] -= 1 },
-      "loo" => Proc.new { print @tape[@tp].chr if @tape[@tp] },
-      "lol" => Proc.new { get_input },
-      "llo" => Proc.new { jump_to_close if @tape[@tp] == 0 },
-      "lll" => Proc.new { jump_to_open unless @tape[@tp] == 0 },
-      "ll." => Proc.new {}
+      "tro" => -> {},
+      "ooo" => -> { @tp = (@tp == @tape.size - 1 ? 0 : @tp + 1) },
+      "ool" => -> { @tp = (@tp == 0 ? @tape.size - 1 : @tp - 1) },
+      "olo" => -> { @tape[@tp] += 1 },
+      "oll" => -> { @tape[@tp] -= 1 },
+      "loo" => -> { print @tape[@tp].chr if @tape[@tp] },
+      "lol" => -> { get_input },
+      "llo" => -> { jump_to_close if @tape[@tp] == 0 },
+      "lll" => -> { jump_to_open unless @tape[@tp] == 0 },
+      "ll." => -> {}
     }
   end
 
