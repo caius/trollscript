@@ -12,9 +12,13 @@ Interpreter is based on [this gist I found](https://gist.github.com/69910) hacke
 
 Just kidding, none needed!
 
+Oops, it's a [rubygem now](https://rubygems.org/gems/trollscript).
+
+`gem install trollscript`
+
 ## USAGE
 
-It's so simple even a troll could do it: `ruby trollscript.rb examples/hello_world.troll`
+It's so simple even a troll could do it: `trollscript path/to/script.troll`
 
 ### The Language
 
