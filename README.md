@@ -28,8 +28,8 @@ trigraphs. Also TrollScript scripts begin with `tro` and end with `ll.`.
 * `-` is `oll` - decrement (decrease by one) the byte at the data pointer
 * `.` is `loo` - output a character, the ASCII value of which being the byte at the data pointer
 * `,` is `lol` - accept one byte of input, storing its value in the byte at the data pointer
-* `[` is `llo` - if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command
-* `]` is `lll` - if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command
+* `[` is `llo` - if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching `]` command
+* `]` is `lll` - if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching `[` command
 
 ## CONTRIBUTE
 
