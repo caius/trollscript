@@ -8,6 +8,8 @@ TrollScript is basically an _esoteric_ dialect of Brainfuck. Why did I make it I
 
 Interpreter is based on [this gist I found](https://gist.github.com/69910) hacked to run TrollScript instead.
 
+Similar to another esoteric language [cow](http://www.bigzaphod.org/cow/)
+
 ## INSTALLATION
 
 Just kidding, none needed!
