@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# Expects one brainfuck file to turn into trollscript
+# Outputs to STDOUT, redirect to a file of your choosing
+str = ARGF.read
+{
+  ">" => "ooo",
+  "<" => "ool",
+  "+" => "olo",
+  "-" => "oll",
+  "." => "loo",
+  "," => "lol",
+  "[" => "llo",
+  "]" => "lll"  
+}.each do |from, to|
+  str = str.gsub(from, to)
+end
+
+puts "tro#{str}ll."
