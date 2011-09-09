@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files            += Dir.glob("man/**/*")
   s.files            += Dir.glob("test/**/*")
 
-  s.executables       = %w( trollscript )
+  s.executables       = %w( trollscript bf2ts )
   s.description       = <<desc
   TrollScript is basically an esoteric dialect of Brainfuck. Why did I make it I hear you ask? Because I had some free time.
 desc
